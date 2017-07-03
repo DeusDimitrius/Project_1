@@ -1,6 +1,3 @@
-/**
- * Created by user on 02.07.17.
- */
 public class CType {
     public static void main(String[] args) {
 
