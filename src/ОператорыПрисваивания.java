@@ -7,7 +7,11 @@ public class ОператорыПрисваивания {
 
         int Apple = 3;
         int Orange = Apple+8;
-        int z = Apple+Orange;
+        int Melon = 1;
+
+        Melon +=2;
+
+        int Fruits = Apple+Orange+Melon;
 
         String myString = "Купить фрукты:";
 
@@ -15,8 +19,8 @@ public class ОператорыПрисваивания {
 
         out.println ("Яблоки - "+Apple++);
         out.println ("Апельсины - "+Orange);
-        out.println("Всего купить фруктов - " + z);
-
+        out.println("Дыни - "+Melon);
+        out.println("Всего купить фруктов - " + Fruits);
 
     }
 
