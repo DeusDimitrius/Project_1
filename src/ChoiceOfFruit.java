@@ -5,8 +5,9 @@ public class ChoiceOfFruit {
     public static void main(String[] args) {
 
         //Цена килограмма яблок
-        int sApple = 50;
-        int sBanana = 45;
+        final int sApple = 50;
+        //Цена килограмма бананов
+        final int sBanana = 45;
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -30,7 +31,7 @@ public class ChoiceOfFruit {
             out.println("Ваша покупка на сумму "+weightOfFruit*sApple+" рублей.");
         }
 
-        if (nameOfFruit == b) {
+        else if (nameOfFruit == b) {
             out.println("Ваш выбор - бананы!");
             out.println("Введите вес пакета фруктов в килограммах");
             //Выбор веса пакета фруктов
@@ -38,9 +39,7 @@ public class ChoiceOfFruit {
             out.println("Вы хотите купить "+weightOfFruit+" килограммов бананов!");
             out.println("Цена килограмма бананов - "+sBanana+" рублей.");
             out.println("Ваша покупка на сумму "+weightOfFruit*sBanana+" рублей.");
-        }
-
-        else {
+        } else {
             out.println("К сожалению, выбранный товар временно отсутствует.");
         }
 
