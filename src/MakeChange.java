@@ -15,6 +15,9 @@ public class MakeChange {
 
         int cents = whatsLeft;
 
+        ++total;
+        out.println("Денег стало больше - " + ++total);
+
         out.println("Сумма "+ total +
         " центов может быть выдана следующими монетами:");
         out.println(quarters + " монет достоинством 25 центов");
