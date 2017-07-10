@@ -14,14 +14,11 @@ public class ChoiceOfFruit {
         out.println("В нашем магазине вы можете купить различные фрукты.");
         out.println("Введите название необходимого фрукта:");
 
-        //Выбор названия фрукта
-        //String nameOfFruit = keyboard.next();
-        int nameOfFruit = keyboard.nextInt();
-        String Apple = "apple";
-        int a = 1;
-        int b = 2;
+        // Выбор названия фрукта
+        // С помощью метода equals я могу заставить программу проверять посимвольно две строки!
+        String nameOfFRuit = keyboard.next();
 
-        if (nameOfFruit == a) {
+        if (nameOfFRuit.equals("apple")) {
             out.println("Ваш выбор - яблоки!");
             out.println("Введите вес пакета фруктов в килограммах");
             //Выбор веса пакета фруктов
@@ -31,7 +28,7 @@ public class ChoiceOfFruit {
             out.println("Ваша покупка на сумму "+weightOfFruit*sApple+" рублей.");
         }
 
-        else if (nameOfFruit == b) {
+        else if (nameOfFRuit.equals ("banan")) {
             out.println("Ваш выбор - бананы!");
             out.println("Введите вес пакета фруктов в килограммах");
             //Выбор веса пакета фруктов
